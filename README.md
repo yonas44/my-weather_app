@@ -50,6 +50,10 @@
 
 This is an application that will allow users to look at weather of a country also allows them to see some up-to-date information about a country. Built with React and Redux.
 
+## Video description <a name="video"></a>
+
+You can find a video description of my project [here](https://www.loom.com/share/7ae49403880c427290e051f5fed32257)👈😁
+
 ## 🛠 Built With <a name="built-with"></a>
 
 - React
@@ -88,7 +92,7 @@ This is an application that will allow users to look at weather of a country als
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://my-weather-app-q80f.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

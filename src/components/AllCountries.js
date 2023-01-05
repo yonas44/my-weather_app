@@ -32,20 +32,16 @@ const AllCountries = () => {
           />
         </div>
       )}
-      { sucess ? (
-        <div className={filteredCountries.length === 1 ? 'hide' : 'countries-holder'}>
-          {filteredCountries.map((country) => (
-            <Country
-              key={country.name.common}
-              id={country.id}
-              name={country.name.common}
-              flag={country.flags.svg}
-              timezone={country.timezones[0]}
-              area={country.area}
-            />
-          ))}
-        </div>
-      ) : (
+      { sucess ? (filteredCountries.map((country) => (
+        <Country
+          key={country.name.common}
+          id={country.id}
+          name={country.name.common}
+          flag={country.flags.svg}
+          timezone={country.timezones[0]}
+          area={country.area}
+        />
+      ))) : (
         <div id="allCountries-error">
           <MdOutlineSmsFailed style={{ color: 'red', scale: '2' }} />
           <span>{errorInfo}</span>
