@@ -1,15 +1,18 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const getAllCountries = createAsyncThunk('fetchCountries', async () => {
   try {
-    const response = await axios.get('https://restcountries.com/v3.1/all');
-    return {
-      sucess: true,
-      data: response.data,
-    };
+    const response = await fetch(`${process.env.REACT_APP_COUNTRIES}`);
+    const data = await response.json();
+    if (!data.message) {
+      return {
+        sucess: true,
+        data,
+      };
+    }
+    return { sucess: false, err: data.message };
   } catch (err) {
-    return { sucess: false, err: err.response.data.message };
+    return { sucess: false, err: err?.response.data.message };
   }
 });
 

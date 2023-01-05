@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page navigates It matchs the snapshot 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <a
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "white",
+          "textDecoration": "none",
+        }
+      }
+    />
+    <span>
+      All countries
+    </span>
+    <div
+      className="search-wrapper"
+    >
+      <div
+        className="search-field"
+      >
+        <input
+          id="country-input"
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Enter a country name.."
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <select
+        id="filter-select"
+      >
+        <option
+          onClick={[Function]}
+          style={
+            Object {
+              "fontWeight": "bolder",
+            }
+          }
+        >
+          All
+        </option>
+        <option
+          onClick={[Function]}
+        >
+          Africa
+        </option>
+        <option
+          onClick={[Function]}
+        >
+          Americas
+        </option>
+        <option
+          onClick={[Function]}
+        >
+          Asia
+        </option>
+        <option
+          onClick={[Function]}
+        >
+          Europe
+        </option>
+      </select>
+    </div>
+  </header>
+  <div
+    className="countries-holder"
+  >
+    <div
+      className="load-wrapper-all-countries"
+    >
+      <img
+        alt="loading"
+        src="load.gif"
+        style={
+          Object {
+            "height": "150px",
+            "width": "150px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="hide"
+    >
+      <button
+        className="country-card"
+        onClick={[Function]}
+        type="button"
+      >
+        <a
+          href="/country"
+          onClick={[Function]}
+        >
+          <img
+            alt="flag"
+            id="flag"
+            src=""
+          />
+          <div
+            className="country-info"
+          >
+            <p
+              id="timezone"
+            >
+              UTC
+            </p>
+            <p
+              id="country-name"
+            >
+              Hello world!
+            </p>
+            <p
+              id="country-size"
+            >
+              Size: 222Km2
+            </p>
+          </div>
+        </a>
+      </button>
+    </div>
+  </div>
+  <footer
+    style={
+      Object {
+        "color": "black",
+        "margin": "auto auto 5px auto",
+        "textAlign": "center",
+      }
+    }
+  >
+    Copyright © 2023 All right reserved | Project by Yonas Tesfu
+  </footer>
+</div>
+`;

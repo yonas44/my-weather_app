@@ -23,27 +23,29 @@ const AllCountries = () => {
 
   return (
     <div className="countries-holder">
-      {loading ? (
-        <div className="load-wrapper">
+      {loading && (
+        <div className="load-wrapper-all-countries">
           <img
             style={{ width: '150px', height: '150px' }}
             src={load}
             alt="loading"
           />
         </div>
-      ) : (
-        ''
       )}
-      { sucess ? (filteredCountries.map((country) => (
-        <Country
-          key={country.name.common}
-          id={country.id}
-          name={country.name.common}
-          flag={country.flags.svg}
-          timezone={country.timezones[0]}
-          area={country.area}
-        />
-      ))) : (
+      { sucess ? (
+        <div className={filteredCountries.length === 1 ? 'hide' : 'countries-holder'}>
+          {filteredCountries.map((country) => (
+            <Country
+              key={country.name.common}
+              id={country.id}
+              name={country.name.common}
+              flag={country.flags.svg}
+              timezone={country.timezones[0]}
+              area={country.area}
+            />
+          ))}
+        </div>
+      ) : (
         <div id="allCountries-error">
           <MdOutlineSmsFailed style={{ color: 'red', scale: '2' }} />
           <span>{errorInfo}</span>

@@ -43,7 +43,8 @@ const weatherSlice = createSlice({
       .addCase(getWeather.rejected, (state, actions) => ({
         ...state,
         sucess: false,
-        errorInfo: actions.payload.err,
+        loading: false,
+        errorInfo: actions.payload?.err ?? 'Page Not found!',
       }));
   },
 });

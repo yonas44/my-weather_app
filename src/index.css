@@ -14,28 +14,32 @@ body {
 header {
   position: fixed;
   display: flex;
-  justify-content: space-between;
-  width: 450px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  gap: 20px;
   backdrop-filter: blur(5px);
   top: 0;
   height: 50px;
   padding: 5px 20px;
-  align-items: flex-end;
+  align-items: center;
   z-index: 3;
 }
 
 /* ------------ AllCountries component ----------------- */
 
 .countries-holder {
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  max-width: 1500px;
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
   flex-wrap: wrap;
   position: relative;
 }
 
-.load-wrapper {
+.load-wrapper-all-countries,
+.load-wrapper-detail-page {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -45,6 +49,10 @@ header {
   z-index: 3;
   justify-content: center;
   backdrop-filter: blur(8px);
+}
+
+.load-wrapper-detail-page {
+  padding-top: 18%;
 }
 
 #filtered-countries {
@@ -59,6 +67,8 @@ header {
 
 #allCountries-error {
   padding: 20px 15px;
+  position: fixed;
+  right: 0;
   border-top-left-radius: 10px;
   box-shadow: 2px 2px 2px black;
   background-color: rgba(255, 0, 0, 0.568);
@@ -75,6 +85,10 @@ header {
   100% {
     transform: translateX(0);
   }
+}
+
+.hide {
+  opacity: 0;
 }
 
 /* ------------ SearchBar component ----------------- */
@@ -108,7 +122,7 @@ header {
 /* ------------ Single-Country component ----------------- */
 
 .country-card {
-  width: 48%;
+  width: 250px;
   height: 150px;
   position: relative;
   border: none;
@@ -171,8 +185,9 @@ header {
 
 .detail-page {
   backdrop-filter: blur(8px);
+  width: 90%;
   padding: 20px;
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
 }
 
 .country-header {
@@ -271,4 +286,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .detail-page {
+    width: 780px;
+  }
+
+  .country-header {
+    height: 350px;
+  }
 }

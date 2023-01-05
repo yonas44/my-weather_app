@@ -8,7 +8,16 @@ const countriesSlice = createSlice({
     loading: false,
     selected: { continent: 'All', country: 'Ethiopia' },
     filterby: '',
-    countries: [],
+    countries: [{
+      name: {
+        common: 'Hello world!',
+      },
+      flags: {
+        svg: '',
+      },
+      area: 222,
+      timezones: ['UTC'],
+    }],
   },
   reducers: {
     filterCountries: (state, actions) => ({
@@ -41,7 +50,7 @@ const countriesSlice = createSlice({
         ...state, loading: true,
       }))
       .addCase(getAllCountries.rejected, (state, actions) => ({
-        ...state, sucess: false, errorInfo: actions.payload.err,
+        ...state, loading: false, sucess: false, errorInfo: actions.payload?.err ?? 'Page Not found!',
       }));
   },
 });

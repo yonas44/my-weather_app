@@ -25,7 +25,7 @@ const Country = ({
         <div className="country-info">
           <p id="timezone">{timezone}</p>
           <p id="country-name">{name}</p>
-          <p id="country-size">{`Size: ${area.toLocaleString()}Km2`}</p>
+          <p id="country-size">{`Size: ${area?.toLocaleString()}Km2`}</p>
         </div>
       </Link>
     </button>

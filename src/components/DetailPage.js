@@ -16,14 +16,14 @@ const DetailPage = () => {
 
   const naviagate = useNavigate();
   useEffect(() => {
-    if (countriesInfo.countries.length === 0) naviagate('/');
+    if (countriesInfo.countries.length === 1) naviagate('/');
   }, [countriesInfo.countries.length, naviagate]);
 
   return (
     <div className="detail-page">
       <div className="country-header">
         {loading ? (
-          <div className="load-wrapper">
+          <div className="load-wrapper-detail-page">
             <img
               style={{ width: '100px', height: '100px' }}
               src={load}
