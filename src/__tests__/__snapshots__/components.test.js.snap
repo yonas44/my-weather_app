@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllCountries-component renders It matchs the snapshot 1`] = `
+<div
+  className="countries-holder"
+>
+  <div
+    className="load-wrapper-all-countries"
+  >
+    <img
+      alt="loading"
+      src="load.gif"
+      style={
+        Object {
+          "height": "150px",
+          "width": "150px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="hide"
+  >
+    <button
+      className="country-card"
+      onClick={[Function]}
+      type="button"
+    >
+      <a
+        href="/country"
+        onClick={[Function]}
+      >
+        <img
+          alt="flag"
+          id="flag"
+          src=""
+        />
+        <div
+          className="country-info"
+        >
+          <p
+            id="timezone"
+          >
+            UTC
+          </p>
+          <p
+            id="country-name"
+          >
+            Hello world!
+          </p>
+          <p
+            id="country-size"
+          >
+            Size: 222Km2
+          </p>
+        </div>
+      </a>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`DetailPage-component renders It matchs the snapshot 1`] = `
+<div
+  className="detail-page"
+>
+  <div
+    className="country-header"
+  >
+    <img
+      alt="flag"
+      id="country-header-img"
+    />
+    <div
+      className="header-info"
+    >
+      <p
+        id="country-name"
+      />
+      <div
+        className="weather-info"
+      >
+        <div
+          id="top-section"
+        >
+          <img
+            alt="weather-icon"
+          />
+          <p />
+        </div>
+        <div
+          id="bottom-section"
+        >
+          <p>
+            °C / °C
+          </p>
+          <p
+            style={
+              Object {
+                "fontSize": "0.85rem",
+              }
+            }
+          >
+            Humidity: %
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="country-detail"
+  >
+    <p>
+      <strong>
+        Capital:
+      </strong>
+       
+    </p>
+    <p>
+      <strong>
+        Population:
+      </strong>
+       undefined
+    </p>
+    <p>
+      <strong>
+        Location:
+      </strong>
+       °N and °E
+    </p>
+    <p>
+      <strong>
+        Subregion:
+      </strong>
+       
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Header-component renders It matchs the snapshot 1`] = `
+<header>
+  <a
+    href="/"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "white",
+        "textDecoration": "none",
+      }
+    }
+  />
+  <span>
+    All countries
+  </span>
+  <div
+    className="search-wrapper"
+  >
+    <div
+      className="search-field"
+    >
+      <input
+        id="country-input"
+        onChange={[Function]}
+        onKeyUp={[Function]}
+        placeholder="Enter a country name.."
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <select
+      id="filter-select"
+    >
+      <option
+        onClick={[Function]}
+        style={
+          Object {
+            "fontWeight": "bolder",
+          }
+        }
+      >
+        All
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Africa
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Americas
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Asia
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Europe
+      </option>
+    </select>
+  </div>
+</header>
+`;
+
+exports[`SingleCountry-component renders It matchs the snapshot 1`] = `
+<button
+  className="country-card"
+  onClick={[Function]}
+  type="button"
+>
+  <a
+    href="/country"
+    onClick={[Function]}
+  >
+    <img
+      alt="flag"
+      id="flag"
+      src={null}
+    />
+    <div
+      className="country-info"
+    >
+      <p
+        id="timezone"
+      />
+      <p
+        id="country-name"
+      />
+      <p
+        id="country-size"
+      >
+        Size: undefinedKm2
+      </p>
+    </div>
+  </a>
+</button>
+`;
