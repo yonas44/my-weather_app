@@ -6,7 +6,7 @@ import load from '../assets/load.gif';
 
 const DetailPage = () => {
   const {
-    weather, sucess, errorInfo,
+    loading, weather, sucess, errorInfo,
   } = useSelector((state) => state.weather);
   const countriesInfo = useSelector((state) => state.countries);
   const selected = countriesInfo.selected.country;
@@ -17,12 +17,12 @@ const DetailPage = () => {
   const naviagate = useNavigate();
   useEffect(() => {
     if (countriesInfo.countries.length === 0) naviagate('/');
-  }, []);
+  }, [countriesInfo.countries.length, naviagate]);
 
   return (
     <div className="detail-page">
       <div className="country-header">
-        {false ? (
+        {loading ? (
           <div className="load-wrapper">
             <img
               style={{ width: '100px', height: '100px' }}
