@@ -18,9 +18,9 @@ describe('Page navigates', () => {
     );
 
     waitFor(() => {
-      fireEvent.click(screen.getByText(/Hello/));
+      fireEvent.click(screen.getByText(/Africa/));
     });
-    expect(screen.getByText(/Hello/)).toBeInTheDocument();
+    expect(screen.getByTestId('africa')).toBeInTheDocument();
   });
 
   test('It matchs the snapshot', () => {

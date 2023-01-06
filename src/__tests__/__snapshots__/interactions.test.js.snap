@@ -5,9 +5,7 @@ exports[`Page navigates It matchs the snapshot 1`] = `
   className="App"
 >
   <header>
-    <a
-      href="/"
-      onClick={[Function]}
+    <div
       style={
         Object {
           "color": "white",
@@ -16,7 +14,7 @@ exports[`Page navigates It matchs the snapshot 1`] = `
       }
     />
     <span>
-      All countries
+      Continents
     </span>
     <div
       className="search-wrapper"
@@ -71,61 +69,57 @@ exports[`Page navigates It matchs the snapshot 1`] = `
     </div>
   </header>
   <div
-    className="countries-holder"
+    className="continents"
   >
-    <div
-      className="load-wrapper-all-countries"
-    >
-      <img
-        alt="loading"
-        src="load.gif"
-        style={
-          Object {
-            "height": "150px",
-            "width": "150px",
-          }
-        }
-      />
-    </div>
-    <div
-      className="hide"
+    <a
+      data-testid="africa"
+      href="/all-countries"
+      onClick={[Function]}
     >
       <button
-        className="country-card"
+        className="Africa"
         onClick={[Function]}
         type="button"
       >
-        <a
-          href="/country"
-          onClick={[Function]}
-        >
-          <img
-            alt="flag"
-            id="flag"
-            src=""
-          />
-          <div
-            className="country-info"
-          >
-            <p
-              id="timezone"
-            >
-              UTC
-            </p>
-            <p
-              id="country-name"
-            >
-              Hello world!
-            </p>
-            <p
-              id="country-size"
-            >
-              Size: 222Km2
-            </p>
-          </div>
-        </a>
+        Africa
       </button>
-    </div>
+    </a>
+    <a
+      href="/all-countries"
+      onClick={[Function]}
+    >
+      <button
+        className="Americas"
+        onClick={[Function]}
+        type="button"
+      >
+        Americas
+      </button>
+    </a>
+    <a
+      href="/all-countries"
+      onClick={[Function]}
+    >
+      <button
+        className="Asia"
+        onClick={[Function]}
+        type="button"
+      >
+        Asia
+      </button>
+    </a>
+    <a
+      href="/all-countries"
+      onClick={[Function]}
+    >
+      <button
+        className="Europe"
+        onClick={[Function]}
+        type="button"
+      >
+        Europe
+      </button>
+    </a>
   </div>
   <footer
     style={
