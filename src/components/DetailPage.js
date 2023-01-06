@@ -14,10 +14,10 @@ const DetailPage = () => {
     (card) => card.name.common === selected,
   )[0] ?? {};
 
-  const naviagate = useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
-    if (countriesInfo.countries.length === 1) naviagate('/');
-  }, [countriesInfo.countries.length, naviagate]);
+    if (countriesInfo.countries.length === 1) navigate('/');
+  }, [countriesInfo.countries.length, navigate]);
 
   return (
     <div className="detail-page">

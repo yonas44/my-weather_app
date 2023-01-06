@@ -1,12 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-
-  <img src="https://github.com/microverseinc/readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -52,7 +45,7 @@ This is an application that will allow users to look at weather of a country als
 
 ## Video description <a name="video"></a>
 
-You can find a video description of my project [here](https://www.loom.com/share/7ae49403880c427290e051f5fed32257)👈😁
+You can find a video description of my project [here](https://www.loom.com/share/7dc2e626a49d40338c0a8f56bd41cffd)👈😁
 
 ## 🛠 Built With <a name="built-with"></a>
 

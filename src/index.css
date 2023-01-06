@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -17,6 +15,7 @@ header {
   justify-content: center;
   width: 100%;
   text-align: center;
+  flex-wrap: wrap;
   gap: 20px;
   backdrop-filter: blur(5px);
   top: 0;
@@ -26,16 +25,101 @@ header {
   z-index: 3;
 }
 
+/* ------------ Continents component ----------------- */
+
+.continents {
+  display: flex;
+  width: 60%;
+  padding-top: 70px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto auto;
+}
+
+.continents a {
+  width: 100%;
+}
+
+.continents button {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  font-size: 100%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Africa {
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.692)), url(./assets/Africa.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.Americas {
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.521)), url(./assets/Americas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.Asia {
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.521)), url(./assets/Asia.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.Europe {
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.521)), url(./assets/Europe.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 /* ------------ AllCountries component ----------------- */
 
-.countries-holder {
+.countries-wrapper {
+  width: 100%;
+  padding-top: 30px;
   margin: 40px auto 0 auto;
-  max-width: 1500px;
+}
+
+.bigger-continent-img {
+  aspect-ratio: 16/9;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 2px 4px 2px black;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeDown 1s forwards;
+  position: relative;
+}
+
+@keyframes fadeDown {
+  100% {
+    opacity: 1;
+  }
+}
+
+.countries-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(100px);
   flex-wrap: wrap;
   position: relative;
+  animation: fadeUp 1.5s forwards ease-out;
+}
+
+@keyframes fadeUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .load-wrapper-all-countries,
@@ -91,6 +175,18 @@ header {
   opacity: 0;
 }
 
+#icon-wrapper {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#explore-icon {
+  scale: 2;
+}
+
 /* ------------ SearchBar component ----------------- */
 
 #filter-select {
@@ -100,11 +196,13 @@ header {
 #country-input {
   margin-right: 10px;
   height: 30px;
+  padding: 10px;
 }
 
 .search-wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .search-field {
@@ -119,11 +217,38 @@ header {
   color: grey;
 }
 
+.results-holder {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  text-align: start;
+  max-height: 30vh;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 10px;
+  background-color: rgba(20, 20, 20, 0.726);
+}
+
+.results-holder a {
+  color: white;
+  text-decoration: none;
+}
+
+#searched-country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* ------------ Single-Country component ----------------- */
 
 .country-card {
-  width: 250px;
-  height: 150px;
+  width: 100%;
+  flex: 1;
+  aspect-ratio: 16/9;
   position: relative;
   border: none;
   background-color: lightgrey;
@@ -295,5 +420,14 @@ header {
 
   .country-header {
     height: 350px;
+  }
+
+  .countries-wrapper {
+    width: 768px;
+  }
+
+  .continents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

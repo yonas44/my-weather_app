@@ -18,7 +18,7 @@ describe('AllCountries-component renders', () => {
       </Provider>,
     );
 
-    expect(screen.getByAltText(/loading/)).toBeInTheDocument();
+    expect(screen.getByText(/Home/)).toBeInTheDocument();
   });
 
   test('It matchs the snapshot', () => {
@@ -46,7 +46,7 @@ describe('Header-component renders', () => {
       </Provider>,
     );
 
-    expect(screen.getByText(/All countries/)).toBeInTheDocument();
+    expect(screen.getByText(/Continents/)).toBeInTheDocument();
   });
 
   test('It matchs the snapshot', () => {
