@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllCountries-component renders It matchs the snapshot 1`] = `
+<div
+  className="countries-wrapper"
+>
+  <div
+    className="All bigger-continent-img"
+  >
+    <h2
+      id="continent-title"
+    >
+      All
+    </h2>
+    <p
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Home of 0 countries!
+    </p>
+    <a
+      href="https://en.wikipedia.org/wiki/All"
+      id="icon-wrapper"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        id="explore-icon"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"
+        />
+      </svg>
+    </a>
+  </div>
+  <div
+    className="countries-holder"
+  />
+</div>
+`;
+
+exports[`DetailPage-component renders It matchs the snapshot 1`] = `
+<div
+  className="detail-page"
+>
+  <div
+    className="country-header"
+  >
+    <img
+      alt="flag"
+      id="country-header-img"
+    />
+    <div
+      className="header-info"
+    >
+      <p
+        id="country-name"
+      />
+      <div
+        className="weather-info"
+      >
+        <div
+          id="top-section"
+        >
+          <img
+            alt="weather-icon"
+          />
+          <p />
+        </div>
+        <div
+          id="bottom-section"
+        >
+          <p>
+            °C / °C
+          </p>
+          <p
+            style={
+              Object {
+                "fontSize": "0.85rem",
+              }
+            }
+          >
+            Humidity: %
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="country-detail"
+  >
+    <p>
+      <strong>
+        Capital:
+      </strong>
+       
+    </p>
+    <p>
+      <strong>
+        Population:
+      </strong>
+       undefined
+    </p>
+    <p>
+      <strong>
+        Location:
+      </strong>
+       °N and °E
+    </p>
+    <p>
+      <strong>
+        Subregion:
+      </strong>
+       
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Header-component renders It matchs the snapshot 1`] = `
+<header>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "textDecoration": "none",
+      }
+    }
+  />
+  <span>
+    Continents
+  </span>
+  <div
+    className="search-wrapper"
+  >
+    <div
+      className="search-field"
+    >
+      <input
+        id="country-input"
+        onChange={[Function]}
+        onKeyUp={[Function]}
+        placeholder="Enter a country name.."
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <select
+      id="filter-select"
+    >
+      <option
+        onClick={[Function]}
+        style={
+          Object {
+            "fontWeight": "bolder",
+          }
+        }
+      >
+        All
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Africa
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Americas
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Asia
+      </option>
+      <option
+        onClick={[Function]}
+      >
+        Europe
+      </option>
+    </select>
+  </div>
+</header>
+`;
+
+exports[`SingleCountry-component renders It matchs the snapshot 1`] = `
+<button
+  className="country-card"
+  onClick={[Function]}
+  type="button"
+>
+  <a
+    href="/country"
+    onClick={[Function]}
+  >
+    <img
+      alt="flag"
+      id="flag"
+      src={null}
+    />
+    <div
+      className="country-info"
+    >
+      <p
+        id="timezone"
+      />
+      <p
+        id="country-name"
+      />
+      <p
+        id="country-size"
+      >
+        Size: undefinedKm2
+      </p>
+    </div>
+  </a>
+</button>
+`;

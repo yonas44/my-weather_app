@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-image: url(./assets/bg-1.jpg);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+  color: white;
+  padding: 20px 0;
+  min-height: 100vh;
+  background-color: white;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
