@@ -8,16 +8,8 @@ const countriesSlice = createSlice({
     loading: false,
     selected: { continent: 'All', country: 'Ethiopia' },
     filterby: '',
-    countries: [{
-      name: {
-        common: 'Hello world!',
-      },
-      flags: {
-        svg: '',
-      },
-      area: 222,
-      timezones: ['UTC'],
-    }],
+    countriesPerPage: 8,
+    countries: [],
   },
   reducers: {
     filterCountries: (state, actions) => ({

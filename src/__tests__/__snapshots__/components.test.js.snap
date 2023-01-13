@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AllCountries-component renders It matchs the snapshot 1`] = `
-<div
+<main
   className="countries-wrapper"
 >
   <div
@@ -52,10 +52,43 @@ exports[`AllCountries-component renders It matchs the snapshot 1`] = `
       </svg>
     </a>
   </div>
-  <div
-    className="countries-holder"
-  />
-</div>
+  <section
+    className="countries-section"
+  >
+    <div
+      className="countries-holder"
+    />
+    <div
+      className="pagination-holder"
+    >
+      <span
+        id="page-number"
+      >
+        1/ 0
+      </span>
+      <div
+        className="buttons-holder"
+      >
+        <button
+          className="pagination-btns"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          Previous
+        </button>
+        <button
+          className="pagination-btns"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
 `;
 
 exports[`DetailPage-component renders It matchs the snapshot 1`] = `
@@ -167,6 +200,7 @@ exports[`Header-component renders It matchs the snapshot 1`] = `
     </div>
     <select
       id="filter-select"
+      value="All"
     >
       <option
         onClick={[Function]}

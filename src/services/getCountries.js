@@ -1,9 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import fetchAllCountries from './fetchAllCountries';
 
 const getAllCountries = createAsyncThunk('fetchCountries', async () => {
   try {
-    const response = await fetch(`${process.env.REACT_APP_COUNTRIES}`);
-    const data = await response.json();
+    const data = await fetchAllCountries();
     if (!data.message) {
       return {
         sucess: true,

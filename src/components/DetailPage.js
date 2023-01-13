@@ -16,7 +16,7 @@ const DetailPage = () => {
 
   const navigate = useNavigate();
   useEffect(() => {
-    if (countriesInfo.countries.length === 1) navigate('/');
+    if (countriesInfo.countries.length < 0) navigate('/');
   }, [countriesInfo.countries.length, navigate]);
 
   return (
