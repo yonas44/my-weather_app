@@ -11,23 +11,21 @@ import store from '../feature/configureStore';
 
 // Mock API calls
 const handlers = [
-  rest.get('https://restcountries.com/v3.1/all', (req, res, ctx) =>
-    res(
-      ctx.json([
-        {
-          name: {
-            common: 'Hello world!',
-          },
-          flags: {
-            svg: '',
-          },
-          region: 'Africa',
-          area: 222,
-          timezones: ['UTC'],
+  rest.get('https://restcountries.com/v3.1/all', (req, res, ctx) => res(
+    ctx.json([
+      {
+        name: {
+          common: 'Hello world!',
         },
-      ])
-    )
-  ),
+        flags: {
+          svg: '',
+        },
+        region: 'Africa',
+        area: 222,
+        timezones: ['UTC'],
+      },
+    ]),
+  )),
   rest.get(
     'https://weatherapi-com.p.rapidapi.com/forecast.json',
     (req, res, ctx) => {
@@ -52,10 +50,10 @@ const handlers = [
           ],
           {
             country,
-          }
-        )
+          },
+        ),
       );
-    }
+    },
   ),
 ];
 
@@ -78,7 +76,7 @@ describe('Page navigates', () => {
         <Router location={history.location} navigator={history}>
           <App />
         </Router>
-      </Provider>
+      </Provider>,
     );
 
     // Check if AllCountries component renders when a continent is selected.
@@ -99,7 +97,7 @@ describe('Page navigates', () => {
           <Router>
             <App />
           </Router>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
 
