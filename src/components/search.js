@@ -76,7 +76,7 @@ const SearchBar = () => {
       </div>
       )}
       {pathname === '/' && (
-      <select id="filter-select">
+      <select id="filter-select" value={continent ?? 'All'}>
         <option
           style={{ fontWeight: 'bolder' }}
           onClick={(e) => handleSelect(e)}

@@ -15,44 +15,50 @@ const Continents = () => {
   }, [dispatch]);
 
   return (
-    <div className="continents">
-      <Link data-testid="africa" to="/all-countries">
-        <button
-          type="button"
-          className="Africa"
-          onClick={() => handleContinentSelect('Africa')}
-        >
-          Africa
-        </button>
-      </Link>
-      <Link to="/all-countries">
-        <button
-          type="button"
-          className="Americas"
-          onClick={() => handleContinentSelect('Americas')}
-        >
-          Americas
-        </button>
-      </Link>
-      <Link to="/all-countries">
-        <button
-          type="button"
-          className="Asia"
-          onClick={() => handleContinentSelect('Asia')}
-        >
-          Asia
-        </button>
-      </Link>
-      <Link to="/all-countries">
-        <button
-          type="button"
-          className="Europe"
-          onClick={() => handleContinentSelect('Europe')}
-        >
-          Europe
-        </button>
-      </Link>
-    </div>
+    <main className="homepage">
+      <section>
+        <h3>Welcome, search for a country or pick a continent to start!</h3>
+      </section>
+      <section className="continents">
+        <Link to="/all-countries">
+          <button
+            data-testid="africa"
+            type="button"
+            className="Africa"
+            onClick={() => handleContinentSelect('Africa')}
+          >
+            Africa
+          </button>
+        </Link>
+        <Link to="/all-countries">
+          <button
+            type="button"
+            className="Americas"
+            onClick={() => handleContinentSelect('Americas')}
+          >
+            Americas
+          </button>
+        </Link>
+        <Link to="/all-countries">
+          <button
+            type="button"
+            className="Asia"
+            onClick={() => handleContinentSelect('Asia')}
+          >
+            Asia
+          </button>
+        </Link>
+        <Link to="/all-countries">
+          <button
+            type="button"
+            className="Europe"
+            onClick={() => handleContinentSelect('Europe')}
+          >
+            Europe
+          </button>
+        </Link>
+      </section>
+    </main>
   );
 };
 

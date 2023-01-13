@@ -7,6 +7,9 @@ const store = configureStore({
     countries: countriesReducer,
     weather: weatherReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+    serializableCheck: false,
+  }),
 });
 
 export default store;

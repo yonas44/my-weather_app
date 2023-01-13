@@ -12,9 +12,34 @@ exports[`Page navigates It matchs the snapshot 1`] = `
           "textDecoration": "none",
         }
       }
-    />
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+            "cursor": "pointer",
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M328 112L184 256l144 144"
+          fill="none"
+          strokeLinecap="square"
+          strokeMiterlimit="10"
+          strokeWidth="48"
+        />
+      </svg>
+    </div>
     <span>
-      Continents
+      /country
     </span>
     <div
       className="search-wrapper"
@@ -32,94 +57,98 @@ exports[`Page navigates It matchs the snapshot 1`] = `
           value=""
         />
       </div>
-      <select
-        id="filter-select"
-      >
-        <option
-          onClick={[Function]}
-          style={
-            Object {
-              "fontWeight": "bolder",
-            }
-          }
-        >
-          All
-        </option>
-        <option
-          onClick={[Function]}
-        >
-          Africa
-        </option>
-        <option
-          onClick={[Function]}
-        >
-          Americas
-        </option>
-        <option
-          onClick={[Function]}
-        >
-          Asia
-        </option>
-        <option
-          onClick={[Function]}
-        >
-          Europe
-        </option>
-      </select>
     </div>
   </header>
   <div
-    className="continents"
+    className="detail-page"
   >
-    <a
-      data-testid="africa"
-      href="/all-countries"
-      onClick={[Function]}
+    <div
+      className="country-header"
     >
-      <button
-        className="Africa"
-        onClick={[Function]}
-        type="button"
+      <div
+        className="load-wrapper-detail-page"
       >
-        Africa
-      </button>
-    </a>
-    <a
-      href="/all-countries"
-      onClick={[Function]}
+        <img
+          alt="loading"
+          src="load.gif"
+          style={
+            Object {
+              "height": "100px",
+              "width": "100px",
+            }
+          }
+        />
+      </div>
+      <img
+        alt="flag"
+        id="country-header-img"
+      />
+      <div
+        className="header-info"
+      >
+        <p
+          id="country-name"
+        >
+          Hello world!
+        </p>
+        <div
+          className="weather-info"
+        >
+          <div
+            id="top-section"
+          >
+            <img
+              alt="weather-icon"
+            />
+            <p />
+          </div>
+          <div
+            id="bottom-section"
+          >
+            <p>
+              °C / °C
+            </p>
+            <p
+              style={
+                Object {
+                  "fontSize": "0.85rem",
+                }
+              }
+            >
+              Humidity: %
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="country-detail"
     >
-      <button
-        className="Americas"
-        onClick={[Function]}
-        type="button"
-      >
-        Americas
-      </button>
-    </a>
-    <a
-      href="/all-countries"
-      onClick={[Function]}
-    >
-      <button
-        className="Asia"
-        onClick={[Function]}
-        type="button"
-      >
-        Asia
-      </button>
-    </a>
-    <a
-      href="/all-countries"
-      onClick={[Function]}
-    >
-      <button
-        className="Europe"
-        onClick={[Function]}
-        type="button"
-      >
-        Europe
-      </button>
-    </a>
+      <p>
+        <strong>
+          Capital:
+        </strong>
+         
+      </p>
+      <p>
+        <strong>
+          Population:
+        </strong>
+         undefined
+      </p>
+      <p>
+        <strong>
+          Location:
+        </strong>
+         °N and °E
+      </p>
+      <p>
+        <strong>
+          Subregion:
+        </strong>
+         
+      </p>
+    </div>
   </div>
   <footer
     style={

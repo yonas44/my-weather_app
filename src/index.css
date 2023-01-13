@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -27,10 +30,20 @@ header {
 
 /* ------------ Continents component ----------------- */
 
+.homepage {
+  padding-top: 70px;
+  width: 60%;
+  text-align: center;
+  margin: auto auto;
+}
+
+.homepage h3 {
+  font-family: 'Kalam', cursive;
+  margin: 20px 0;
+}
+
 .continents {
   display: flex;
-  width: 60%;
-  padding-top: 70px;
   gap: 5px;
   justify-content: center;
   align-items: center;
@@ -185,6 +198,26 @@ header {
 
 #explore-icon {
   scale: 2;
+}
+
+.pagination-holder {
+  margin-top: 20px;
+  padding: 20px 10px 0 10px;
+  border-top: 1px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: black;
+}
+
+.buttons-holder {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-btns {
+  padding: 5px 8px;
 }
 
 /* ------------ SearchBar component ----------------- */
