@@ -24,20 +24,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<p align="center">
-  <img style="width: 80%;" src="./src/Assets/big1.png" />
-</p>
-
-<div align="center">
-
-  <span align="left" style="width: 250px;">
-     <img style="width: 200px;" src="./src/Assets/small 1.png" />
-  </span>
-
-  <span align="right">
-     <img style="width: 200px;" src="./src/Assets/small 2.png" />
-  </span>
-</div>
 
 # 📖 My Weather app <a name="about-project"></a>
 
